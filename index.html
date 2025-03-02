@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith of Innovation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .intro {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 100;
+            opacity: 1;
+            animation: fadeOut 3s ease-out forwards;
+            animation-delay: 2s;
+        }
+        .intro-circle {
+            width: 40vw;
+            height: 40vw;
+            max-width: 500px;
+            max-height: 500px;
+            min-width: 200px;
+            min-height: 200px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: shrink 3s ease-out forwards;
+            animation-delay: 0s;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            66% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+        @keyframes shrink {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            100% { transform: translate(-50%, -50%) scale(0.7); }
+        }
+        .content {
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+            animation-delay: 3s;
+            width: 90%;
+            max-width: 1000px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .contact {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #fff;
+        }
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="intro-circle"></div>
+        Zenith of Innovation
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1>Zenith of Innovation</h1>
+            <p class="subtext">Made in Japan</p>
+            <div class="image-section">
+                <img src="https://github.com/Yamaken1111/whoisme321/blob/main/IMG_2032.JPG?raw=true" 
+                     alt="Zenith 1 Design">
+            </div>
+            <p class="subtext" style="margin-top: 100px;">Coming soon in 2025.</p>
+            <div class="contact">
+                <p>お問い合わせはこちら：</p>
+                <a href="mailto:info@kendama.jp">info@kendama.jp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
